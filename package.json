@@ -1,0 +1,36 @@
+{
+  "name": "react-native-switch-audio-output-android",
+  "title": "React Native Switch Audio Output Source (for Android)",
+  "version": "1.0.0",
+  "description": "Library for selecting audio output source (for Android). Uses Android's AudioManager class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anttivuor/react-native-switch-audio-output-android.git",
+    "baseUrl": "https://github.com/anttivuor/react-native-switch-audio-output-android"
+  },
+  "keywords": [
+    "react-native",
+    "audio source",
+    "audio output",
+    "android"
+  ],
+  "author": {
+    "name": "Antti Vuorenmaa",
+    "email": "anttivuor@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.62.0"
+  },
+  "devDependencies": {
+    "react": "16.9.0",
+    "react-native": "^0.63.3"
+  }
+}
