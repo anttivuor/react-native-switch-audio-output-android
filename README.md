@@ -7,10 +7,6 @@ Library for selecting audio output source (**only for Android**). Uses Android's
 or
 `yarn add react-native-switch-audio-output-android`
 
-### If you are using React Native < 0.60, link React Native dependency and install CocoaPods dependency
-
-`$ react-native link react-native-switch-audio-output && cd ios && pod install && cd ..`
-
 ## Usage
 ```javascript
 import AudioOutput from 'react-native-switch-audio-output-android';
