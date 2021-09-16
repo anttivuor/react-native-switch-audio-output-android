@@ -15,7 +15,7 @@ public class RNSwitchAudioOutputPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new RNSwitchAudioOutputPackage(reactContext));
+        modules.add(new RNSwitchAudioOutputModule(reactContext));
         return modules;
     }
 
