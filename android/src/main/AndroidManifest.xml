@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.anttivuor.rnswitchaudiooutput">
+          package="com.anttivuor.switchaudiooutput">
     <application>
         <service
-            android:name=".RNSwitchAudioOutput"
+            android:name=".RNSwitchAudioOutputModule"
             android:exported="true"
         />
     </application>

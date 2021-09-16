@@ -1,4 +1,4 @@
-package com.anttivuor.rnswitchaudiooutput;
+package com.anttivuor.switchaudiooutput;
 
 import android.content.Context;
 
@@ -26,7 +26,7 @@ public class RNSwitchAudioOutputModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNSwitchAudioOutputModule";
+        return "RNSwitchAudioOutput";
     }
 
     private String getAudioRouteType(int type) {
@@ -59,11 +59,8 @@ public class RNSwitchAudioOutputModule extends ReactContextBaseJavaModule {
             for (AudioDeviceInfo device : audioDeviceInfo){
                 String type = getAudioRouteType(device.getType());
                 if (type != null && !typeChecker.contains(type)) {
-                    WritableMap deviceInfo = Arguments.createMap();
-                    deviceInfo.putString("name", type);
-                    deviceInfo.putString("type", type);
                     typeChecker.add(type);
-                    devices.pushMap(deviceInfo);
+                    devices.pushString(type);
                 }
             }
             promise.resolve(devices);

@@ -5,9 +5,13 @@
 var {NativeModules} = require("react-native");
 var RNSwitchAudioOutput = NativeModules.RNSwitchAudioOutput || {};
 
-var audioOutput = {
-    getAudioDevices: () => RNSwitchAudioOutput.getAudioDevices(),
-    setAudioDevice: (deviceName) => RNSwitchAudioOutput.setAudioDevice(deviceName),
+var SwitchAudioOutput = {
+    getAudioDevices() {
+        return RNSwitchAudioOutput.getAudioDevices();
+    },
+    setAudioDevice(deviceName) {
+        return RNSwitchAudioOutput.setAudioDevice(deviceName);
+    },
 };
 
-module.exports = audioOutput;
+module.exports = SwitchAudioOutput;

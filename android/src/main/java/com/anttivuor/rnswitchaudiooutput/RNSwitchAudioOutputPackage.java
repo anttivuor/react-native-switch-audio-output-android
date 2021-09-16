@@ -1,4 +1,4 @@
-package com.anttivuor.rnswitchaudiooutput;
+package com.anttivuor.switchaudiooutput;
 
 import java.util.Arrays;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-declare type audioOutput = {
-    getAudioDevices: () => string[],
-    setAudioDevice: (deviceName: string) => boolean,
+declare namespace SwitchAudioOutput {
+    const getAudioDevices: () => string[]
+    const setAudioDevice: (deviceName: string) => boolean,
 };
 
-export = audioOutput;
+export = SwitchAudioOutput;
