@@ -79,6 +79,7 @@ public class RNSwitchAudioOutputModule extends ReactContextBaseJavaModule {
                 audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
                 audioManager.startBluetoothSco();
                 audioManager.setBluetoothScoOn(true);
+                audioManager.setSpeakerphoneOn(false);
                 promise.resolve(true);
                 return;
             } else if (deviceName.equals("Headset")) {
@@ -89,10 +90,11 @@ public class RNSwitchAudioOutputModule extends ReactContextBaseJavaModule {
                 promise.resolve(true);
                 return;
             } else if (deviceName.equals("Speaker")) {
-                audioManager.setMode(AudioManager.MODE_NORMAL);
+                audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
                 audioManager.stopBluetoothSco();
                 audioManager.setBluetoothScoOn(false);
                 audioManager.setSpeakerphoneOn(true);
+                promise.resolve(true);
                 return;
             }
             promise.resolve(false);

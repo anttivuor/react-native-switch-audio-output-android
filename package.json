@@ -1,7 +1,7 @@
 {
   "name": "react-native-switch-audio-output-android",
   "title": "React Native Switch Audio Output Source (for Android)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for selecting audio output source (for Android). Uses Android's AudioManager class.",
   "main": "index.js",
   "scripts": {
